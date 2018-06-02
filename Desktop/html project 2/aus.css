@@ -1,0 +1,250 @@
+@import url('https://fonts.googleapis.com/css?family=Fascinate+Inline');
+@import url('https://fonts.googleapis.com/css?family=Slabo+27px');
+@import url('https://fonts.googleapis.com/css?family=Indie+Flower');
+@import url(//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css);
+@import url('https://fonts.googleapis.com/css?family=Alegreya:400,700');
+
+fieldset, label { margin: 0; padding: 0; }
+
+h1 { font-size: 1.5em; margin: 10px; }
+
+
+
+.rating { 
+  border: none;
+  float: left;
+  margin-bottom: 20px;
+}
+.rating span{
+	font-size: 30px;
+}
+
+.rating > input { display: none; } 
+.rating > label:before { 
+  margin: 5px;
+  font-size: 1.25em;
+  font-family: FontAwesome;
+  display: inline-block;
+  content: "\f005";
+}
+
+.rating > .half:before { 
+  content: "\f089";
+  position: absolute;
+}
+
+.rating > label { 
+  color: #ddd; 
+ float: right; 
+}
+
+/***** CSS Magic to Highlight Stars on Hover *****/
+
+.rating > input:checked ~ label, /* show gold star when clicked */
+.rating:not(:checked) > label:hover, /* hover current star */
+.rating:not(:checked) > label:hover ~ label { color: #FFD700;  } /* hover previous stars in list */
+
+.rating > input:checked + label:hover, /* hover current star when changing rating */
+.rating > input:checked ~ label:hover,
+.rating > label:hover ~ input:checked ~ label, /* lighten current selection */
+.rating > input:checked ~ label:hover ~ label { color: #FFED85;  } 
+.mySlides{
+	width: 70vw;
+	height: 70vh;
+	border: 8px solid white;
+	z-index: 6;
+}
+.bor{
+	position: absolute;
+	margin-top: 10px;
+	width: 240px;
+	height: 100px;
+	right: 40%;
+}
+.name div{
+	display: inline;
+}
+.name a{
+	font-family: 'Fascinate Inline', cursive;
+	text-decoration: none;
+	
+	color: black;
+	font-size: 40px;
+}
+.des1{
+	border-right: 2px solid black;
+}
+.des{
+	margin-left: 40px;
+}
+.par{
+	margin-top: 10px;
+}
+span{
+	font-family: 'Indie Flower', cursive;
+}
+p{
+	display: inline-block;
+	font-family: 'Slabo 27px', serif;
+	font-weight: bold;
+	font-size: 35px;
+	margin-left: 16px;
+
+}
+div{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.mySlides{
+	display: none;
+}
+
+.about{
+	position: relative;
+	font-weight: bold;
+	font-size: 40px;
+	margin-right: -40px;
+	font-family: 'Alegreya', serif;
+}
+
+.form h1{
+  font-family: helvetica,sans-serif;
+  font-weight: 900;
+  color: #fcfcf5;
+  text-align: center;
+  letter-spacing: .01em;
+}
+
+#feedback-page{
+	text-align:center;
+}
+
+#form-main{
+	width:100%;
+	float:left;
+	padding-top:0px;
+}
+
+#form-div {
+	background-color:rgba(231, 76, 60,0.9);
+	padding-left:35px;
+	padding-right:35px;
+	padding-top:35px;
+	padding-bottom:50px;
+	width: 500px;
+	float: left;
+	left: 10%;
+	position: absolute;
+  margin-top:30%;
+	right: 0;
+
+}
+
+.feedback-input {
+	color:#0493bd;
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: 18px;
+	border-radius: 0;
+	vertical-align: middle;
+	background-color: #ecf0f1;
+	padding: 13px 13px 13px 54px;
+	margin-bottom: 10px;
+	width:100%;
+	box-sizing: border-box;
+  border: 3px solid #bdc3c7;
+}
+
+.feedback-input:focus{
+	background: #ecf0f1;
+	box-shadow: 0;
+	border: 3px solid #3498db;
+	color: #3498db;
+	outline: none;
+  padding: 13px 13px 13px 54px;
+}
+
+.focused{
+	color:#30aed6;
+	border:#30aed6 solid 3px;
+}
+
+#name{
+	background-image: url(http://wpplus.me/wp-content/uploads/2013/08/head-32x32.png);
+	background-size: 60px 40px;
+	background-position: 20px 20px;
+	background-repeat: no-repeat;
+}
+
+#email{
+	background-image: url(http://wpplus.me/wp-content/uploads/2013/08/envelope-32x32.png);
+	background-size: 32px 32px;
+	background-position: 11px 8px;
+	background-repeat: no-repeat;
+}
+
+#comment{
+	background-image: url(http://wpplus.me/wp-content/uploads/2013/08/pencil-32x32.png);
+	background-size: 32px 32px;
+	background-position: 11px 8px;
+	background-repeat: no-repeat;
+}
+
+textarea {
+	width: 100%;
+	height: 150px;
+	line-height: 150%;
+}
+
+input:hover, textarea:hover,
+input:focus, textarea:focus {
+	background-color:white;
+}
+
+#button-bottom{
+	font-family: webfontbold, Arial, Helvetica, sans-serif;
+	float:left;
+	width: 100%;
+	border: #fbfbfb solid 4px;
+	background-color: rgba(9,179,116,0.9);
+	color:white;
+	font-size:24px;
+	padding-top:22px;
+	padding-bottom:22px;
+    margin-top:-4px;
+}
+
+#button-bottom:hover{
+	background-color: rgba(230, 126, 34,0.9);
+	color: rgba(52, 73, 94,0.9);
+}
+	
+.submit:hover{
+	color: rgba(149, 165, 166,0.9);
+}
+	
+
+
+
+body{
+	margin: 0;
+
+}
+.sec1{
+  background-image: url(http://www.avenueroadadvertising.com/wp-content/uploads/2016/09/plasticc.jpg);
+  width: 100vw;
+  height: 130vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 0;
+  padding: 0;
+}
+.sec{
+	background-image: url(https://st.depositphotos.com/1158226/2658/i/950/depositphotos_26583859-stock-photo-vintage-cafe-on-the-corner.jpg);
+  width: 100vw;
+  height: 110vh;
+   background-repeat: no-repeat;
+  background-size: cover;
+  margin: 0;
+  padding: 0;
+}

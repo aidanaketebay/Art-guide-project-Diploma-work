@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css?family=Fascinate+Inline');
+@import url('https://fonts.googleapis.com/css?family=Pacifico');
+body{
+  background-image: url(http://www.alain-passard.com/wp-content/uploads/2016/01/Salle-Arpege-S-Delpech.jpg);
+  width: 100vw;
+  height: 270vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 0;
+  padding: 0;
+}
+header h1{
+  display: inline;
+  font-family: 'Fascinate Inline', cursive;
+  color: black;
+  font-size: 47px;
+  text-align: center;
+  margin-top: 5px;
+  margin-right: 20px;
+}
+header a{
+  text-decoration: none;
+}
+.menu-body {
+  max-width: 680px;
+  margin: 0 auto;
+  display: block;
+  color: rgb(92, 92, 92);
+}
+ 
+.menu-section {
+  margin-bottom: 80px;
+}
+ 
+.menu-section-title {
+  font-family: 'Pacifico', cursive;
+  font-size: 50px;
+  display: block;
+  font-weight:bold;
+  margin: 20px 0; 
+  color: black;
+  text-align: center;
+}
+ 
+.menu-item {
+  margin: 35px 0;
+  font-size: 18px;
+}
+ 
+.menu-item-name{
+  font-family: helvetica;
+  color: black;
+  font-weight: bold;
+  border-bottom: 2px dotted rgb(213, 213, 213);
+}
+ 
+.menu-item-description {
+  font-style: italic;
+  color: black;
+  font-size: .9em;
+  line-height: 1.5em;
+}
+
+footer{
+  display: inline-block;
+  list-style-type: none;
+  position:fixed;
+  bottom:0;
+  color: black;
+  text-align: center;
+  font-weight: bold;
+  width: 100%;
+  height: 15.5vh;
+  background-color: #F0F8FF;
+}
+.footer_address a{
+  font-size: 18px;
+  text-decoration: none;
+}
+footer nav{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  margin-left: -5%;
+}
+footer nav li{
+  list-style-type: none;
+  float: left;
+  margin-left: 80px;
+}
+.footer_address a{
+  color: black;
+}
+.footer_address span{
+  font-family: 'Indie Flower', cursive;
+}
+footer img{
+  width: 30px;
+  height: 30px;
+}
+.menu-item-price{
+  float: right;
+  color: black;
+  font-weight: bold;
+  font-family: arial;
+  margin-top: -22px;
+}
+
+/* Style inputs with type="text", select elements and textareas */
+input[type=text], select, textarea {
+    width: 100%; /* Full width */
+    padding: 20px; /* Some padding */  
+    border: 1px solid #ccc; /* Gray border */
+    border-radius: 4px; /* Rounded borders */
+    box-sizing: border-box; /* Make sure that padding and width stays in place */
+    margin-top: 10px; /* Add a top margin */
+    margin-bottom: 30px; /* Bottom margin */
+    resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+
+}
+
+/* Style the submit button with a specific background color etc */
+input[type=submit] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 30px 40px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+/* When moving the mouse over the submit button, add a darker green color */
+input[type=submit]:hover {
+    background-color: #45a049;
+}
+
+/* Add a background color and some padding around the form */
+.container {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 50px;
+

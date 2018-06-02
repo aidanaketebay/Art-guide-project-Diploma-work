@@ -1,0 +1,302 @@
+@import url('https://fonts.googleapis.com/css?family=Fascinate+Inline');
+@import url('https://fonts.googleapis.com/css?family=Pacifico');
+@import url('https://fonts.googleapis.com/css?family=Dancing+Script:400,700');
+@import url('https://fonts.googleapis.com/css?family=Satisfy');
+@import url('https://fonts.googleapis.com/css?family=Lobster+Two:400,400i,700');
+@media screen and (max-width: 600px){
+			body{
+				margin:0;
+				overflow-wrap: normal;
+				word-wrap: normal;
+			}
+
+		
+		nav a h1{
+			display: inline;
+			font-family: 'Fascinate Inline', cursive;
+			color: white;
+			font-size: 35px;
+			float:left;
+			margin-top: 0px;
+			margin-right: 10px;
+		}
+		#nav{
+			display: none;
+		}
+		
+
+		.imgg{
+			background-image: url(https://upload.wikimedia.org/wikipedia/commons/7/7f/Rome_at_night.jpg);
+			background-repeat: no-repeat;
+			background-size: cover;
+			width: 100%;
+			height: 90vh;
+			margin: 0;
+			padding: 0;
+			display: flex;
+			flex-direction: column;
+			
+		}
+		.imgg .sub{
+			font-family: 'Pacifico', cursive;
+			color: rgba(228, 148, 0, 0.98);
+			font-size: 30px;
+			margin: 0;
+			padding: 7% 5% 0% 20%;
+			
+		}
+		.imgg .des{
+			font-family: 'Dancing Script', cursive;
+			color: #E6E6FA;
+			font-size: 40px;
+			margin: 0;
+			margin: 3% 10% 0% 40%;
+		}
+		.imgg .rome{
+			font-family: 'Dancing Script', cursive;
+			color: #E6E6FA;
+			font-weight: 700;
+			font-size: 50px;
+			margin: 0;
+			margin: 0% 12% 0% 50%;
+		}
+		.imgg .wel{
+			font-family: 'Satisfy', cursive;
+			color: #FFF5EE;
+			font-size: 50px;
+			margin:0;
+			margin: 5% 0% 0% 8%;
+		}
+		.but{
+			background-color: rgba(0,0,0,0.1);
+			color: #DEB887;
+			font-size: 30px;
+			margin: 0% 0% 0% 22%;
+			border-radius: 10px;
+			border: 1px solid #DEB887;
+			font-family: 'Lobster Two', cursive;
+		}
+		nav ul ul{
+			display:none;
+			position:absolute;
+			top:100%;
+			left:0;
+			background:#fff;
+			padding:0
+		}
+		 nav ul ul li
+		{
+			float:none;
+			width:200px
+		}
+		nav ul ul a
+		{
+			line-height:120%;
+			padding:10px 15px
+		}
+		nav ul ul ul
+		{
+			top:0;
+			left:100%
+		}
+
+		nav ul li:hover > ul
+		{
+			display:block
+		}
+
+		footer{
+		  display: inline-block;
+		  list-style-type: none;
+		  position:fixed;
+		  bottom:0;
+		  color: black;
+		  text-align: center;
+		  font-weight: bold;
+		  width: 100%;
+		  height: 15.5vh;
+		  background-color: #BC8F8F;
+		}
+		.footer_address a{
+			font-size: 18px;
+		}
+		footer nav{
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			padding: 0;
+			margin-left: -5%;
+		}
+		footer nav li{
+			list-style-type: none;
+			float: left;
+			margin-left: 80px;
+
+		}
+		footer img{
+			display: none;
+			width: 30px;
+			height: 30px;
+		}
+}
+
+
+body{
+	margin:0;
+	overflow-wrap: normal;
+	word-wrap: normal;
+}
+
+header{
+	background-color: #BC8F8F;
+	color: white;
+	padding: 8px 0px 6px 40px;
+	height: 74px;
+}
+header h1{
+	display: inline;
+	font-family: 'Fascinate Inline', cursive;
+	color: black;
+	font-size: 45px;
+	float:left;
+	margin-top: 0px;
+	margin-right: 18px;
+}
+nav ul{
+	display: inline;
+	padding: 0px;
+	float: left;
+
+
+}
+nav ul li{
+	display: inline-block;
+	list-style-type: none;
+	float: left;
+	margin-left: 20px;
+
+}
+a{
+	font-family: "Great Vibes", cursive;
+	color: black;
+	text-decoration: none;
+	font-size: 25px;
+	font-weight: bold;
+}
+.home{
+	background-color: #FFE4E1;
+	padding: 24px 26px 23px 26px;
+}
+
+.other: hover{
+	background-color: rgba(228, 148, 0, 0.98);
+	padding: 30px 20px 20px 25px;
+}
+.imgg{
+	background-image: url(https://upload.wikimedia.org/wikipedia/commons/7/7f/Rome_at_night.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	width: 100%;
+	height: 110vh;
+	margin: 0;
+	padding: 0;
+}
+.sub{
+	font-family: 'Pacifico', cursive;
+	color: rgba(228, 148, 0, 0.98);
+	font-size: 60px;
+	margin: 0;
+	padding: 7% 5% 0% 20%;
+}
+.des{
+	font-family: 'Dancing Script', cursive;
+	color: #E6E6FA;
+	font-size: 80px;
+	margin: 0;
+	margin: 3% 10% 0% 40%;
+}
+.rome{
+	font-family: 'Dancing Script', cursive;
+	color: #E6E6FA;
+	font-weight: 700;
+	font-size: 90px;
+	margin: 0;
+	margin: 0% 12% 0% 50%;
+}
+.wel{
+	font-family: 'Satisfy', cursive;
+	color: #FFF5EE;
+	font-size: 60px;
+	margin:0;
+	margin: 5% 0% 0% 8%;
+}
+.but{
+	background-color: rgba(0,0,0,0.1);
+	color: #DEB887;
+	font-size: 30px;
+	margin: 0% 0% 0% 22%;
+	border-radius: 10px;
+	border: 1px solid #DEB887;
+	font-family: 'Lobster Two', cursive;
+}
+nav ul ul{
+	display:none;
+	position:absolute;
+	top:100%;
+	left:0;
+	background:#fff;
+	padding:0
+}
+ nav ul ul li
+{
+	float:none;
+	width:200px
+}
+nav ul ul a
+{
+	line-height:120%;
+	padding:10px 15px
+}
+nav ul ul ul
+{
+	top:0;
+	left:100%
+}
+
+nav ul li:hover > ul
+{
+	display:block
+}
+
+footer{
+  display: inline-block;
+  list-style-type: none;
+  position:fixed;
+  bottom:0;
+  color: black;
+  text-align: center;
+  font-weight: bold;
+  width: 100%;
+  height: 15.5vh;
+  background-color: #BC8F8F;
+}
+.footer_address a{
+	font-size: 18px;
+}
+footer nav{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 0;
+	margin-left: -5%;
+}
+footer nav li{
+	list-style-type: none;
+	float: left;
+	margin-left: 80px;
+
+}
+footer img{
+	width: 30px;
+	height: 30px;
+}
