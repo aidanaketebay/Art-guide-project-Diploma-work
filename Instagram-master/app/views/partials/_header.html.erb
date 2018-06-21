@@ -1,0 +1,43 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <div class="container">
+    <a class="navbar-brand" href="/">Instagram</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+  <ul class="navbar-nav">
+    <li class="nav-item">
+      <a class="nav-link" href="/">Home</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="/about">About</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="/contact">Contact</a>
+    </li>
+  </ul>
+  <ul class="navbar-nav ml-auto">
+    <%if signed_in? %>
+        <li>
+          
+        
+          <%= link_to "logout", logout_path, method: :delete, data: { confirm: "Are you sure?"} %></li>
+          <%else%>
+          <li>
+          <%= link_to "login", login_path %></li>
+          
+
+      </li>
+      <%end%>
+    
+  </ul>
+
+  </div>
+  </div>
+
+</nav>
+
+
+     

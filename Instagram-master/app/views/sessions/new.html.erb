@@ -1,0 +1,15 @@
+<% if flash[:error] %>
+	<h2><%= flash[:error]%></h2>
+<%end%>
+
+<%= form_for(:session, url: login_path) do |f| %>
+	<%= f.text_field :login , placeholder: "username or email" %>
+	<%= f.text_field :password, placeholder: "password" %>
+	
+	<%= f.label :remember_me, class: "checkbox inline" do %>
+        <%= f.check_box :remember_me %>
+        <span>Remember me on this computer</span>
+      <% end %>
+	<%= f.submit "Login" %>
+	<p><%= link_to "sign up", signup_path %></p>
+<%end%>

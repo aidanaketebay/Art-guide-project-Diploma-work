@@ -1,0 +1,10 @@
+<h1><%= @user.username %></h1>
+<h2><%= @user.email %></h2>
+
+<% if @user.avatar.attachment.nil? %>
+	<img src="https://www.bsn.eu/wp-content/uploads/2016/12/user-icon-image-placeholder-300-grey.jpg">
+
+<% else %>
+	<%= image_tag @user.avatar %>
+	
+<% end %>
